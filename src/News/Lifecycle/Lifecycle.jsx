@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import noImage from './img/noimage.png'
 
-class NewsPortal extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+class NewsLifecycle extends Component {
+    state = {
       articles: [],
       cari: ''
     };
-  }
 
   componentDidMount() {
     this.fetchNews('latest');
@@ -100,4 +97,4 @@ class NewsPortal extends Component {
   }
 }
 
-export default NewsPortal;
+export default NewsLifecycle;
